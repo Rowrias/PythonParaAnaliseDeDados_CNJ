@@ -7,11 +7,12 @@ while(cond):
         if (idade < 5):
             print("Menores de 5 anos não pagam\nR$0,00")
             letra = input("aperte 's' para saber o preço através da sua idade ou aperte 'q' para sair: ")
+            if (letra == 's'):
+                break
             if (letra == 'q'):
                 cond = False
                 print("Tchau")
-            if (letra == 's'):
-                break
+
         elif (idade >= 5 and idade <= 12):
             print("Crianças entre 5 e 12 anos pagam meia-entrada\nR$", valor_base/2)
             letra = input("aperte 's' para saber o preço através da sua idade ou aperte 'q' para sair: ")
